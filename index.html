@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background-image: url(images/Login.png);
+            background-size: cover
+        }
+        .login-div {
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #e6e3e3;
+            box-shadow: rgba(228, 225, 225, 0.2) 1px 2px 8px 0px;
+            text-align: center;
+            opacity: 99%;
+        }
+        .login-inner-div{
+            padding: 10px;
+        }
+        .logo {
+            width: 130px;
+            height: auto;
+            align-items: center;
+        }
+        .title-text {
+            padding-bottom: 30px;
+            margin-top: -10px;
+            font-size: 18px;
+            font-weight:500;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            text-align: left;
+            font-size: 16px;
+            margin-left: 35px;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 85%;
+            padding: 10px;
+            margin-top: 6px;
+            border-radius: 5px;
+            font-size: 16px;
+            border: solid;
+            border-width: 1px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            background: url(images/username.png) no-repeat 10px center; 
+            padding-left: 45px; 
+        }
+        input.password {
+            background: url(images/password.png) no-repeat 10px center; 
+            padding-left: 45px; 
+        }
+        input:focus {
+            outline: none; 
+        }
+        .login-button{
+            background-color: black;
+            color: white;
+            padding-left: 80px;
+            padding-right: 80px;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            border-radius: 5px;
+            border: none;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .login-button:hover{
+            opacity: 70%;
+        }
+    </style>
+</head>
+<body>
+        <div class="login-div">
+            <div class="login-inner-div">
+                <img src="images/logo.png" class="logo">
+                <p class="title-text">Speed Up Garage Inventory<br> and POS System</p>
+                <div>
+                    <label for="uname">Username</label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                    <label for="psw">Password</label>
+                    <input type="password" placeholder="Enter Password" name="psw" class="password" required>
+                    <button class="login-button">Login</button>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
